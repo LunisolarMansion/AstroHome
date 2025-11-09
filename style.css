@@ -1,0 +1,191 @@
+html { font-size: 16px; }
+html[data-lang="as"] { font-size: 16.5px; }
+
+:root{
+  --bg: #444444;
+  --card: #1e1e1e;
+  --card-2: linear-gradient(180deg, #672900, #b34700);
+  --text:#f9f9f9;
+  --muted:#dedede;
+  --accent:#f9f9f9;
+  --btn-radius: 999px;
+  --shadow: 0 6px 20px rgba(0,0,0,.75);
+  --shadow-hover: 0 10px 28px rgba(0,0,0,.75);
+  --inner-bg: rgba(255,255,255,0.02);
+  --inner-border: rgba(255,255,255,0.04);
+  --inner-hover-gradient: linear-gradient(180deg,#00cd00,#fffdd0,#fffdd0,#fffdd0,#fffdd0);
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html[data-lang="as"] body{
+  font-family: "Noto Sans Assamese", "Nirmala UI", "Noto Sans Bengali", Arial, sans-serif;
+  letter-spacing: 0.005em;
+  font-feature-settings: "kern" 1;
+}
+
+header{
+  position: relative;
+  max-width: 930px;
+  margin: 24px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  vertical-align: middle;
+  background: #000;
+}
+
+.header-content{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding: 40px 24px;
+  color:#fff;
+}
+
+#site-title{ font-size:2.75rem; font-weight:600; margin:0 auto 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+.slogan{ margin:8px auto 20px; font-size:1.05rem; font-style:italic; max-width:90%; text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+
+#lang-toggle{
+  background: linear-gradient(135deg, #111111, #A8E338);
+  color:#fff; border:none; border-radius:var(--btn-radius);
+  padding:10px 20px; font-size:.95rem; font-weight:600; cursor:pointer;
+  box-shadow:0 6px 18px rgba(125,171,18,.35);
+}
+#lang-toggle:hover{ transform:translateY(-2px); background: linear-gradient(270deg, #111111, #ffa500); }
+
+main{ max-width:960px; margin:22px auto; padding:0 16px; }
+
+/* standard section tile */
+section{
+  background:var(--card);
+  padding:28px;
+  margin-bottom:20px;
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  transition: background .25s ease, box-shadow .25s ease, transform .2s ease;
+}
+section:hover{ background:var(--card-2); box-shadow:var(--shadow-hover); transform: translateY(-4px); }
+
+h2{ text-align:center; color:var(--accent); font-size:1.4rem; border-bottom:1px solid #2b2b2b; padding-bottom:10px; margin-bottom:14px; font-weight:600; }
+p{ color:var(--muted); text-align: justify; }
+
+/* ENCLOSURE: acts exactly like other section tiles but contains two small inner tiles */
+.enclosure {
+  display: block;
+  padding: 18px;
+  border-radius: 12px;
+  background: transparent; /* enclosure inherits section bg */
+}
+
+/* Inner tiles container */
+.inner-tiles {
+  display: grid;
+  grid-template-columns: 1fr; /* stacked vertically */
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* small inner tile style */
+.inner-tile {
+  background: var(--inner-bg);
+  border: 1px solid var(--inner-border);
+  border-radius: 12px;
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  transition: transform .15s ease, box-shadow .15s ease, background .18s ease, border-color .18s ease;
+}
+/* Hover: change to requested gradient and ensure text stays readable */
+.inner-tile:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.5);
+  background: var(--inner-hover-gradient);
+  border-color: rgba(0,0,0,0.12);
+  color: #0b1208; /* dark text over light gradient for readability */
+}
+/* Make sure inner text adopts correct color on hover */
+.inner-tile:hover h3,
+.inner-tile:hover p,
+.inner-tile:hover .small-note {
+  color: #081007;
+}
+
+/* override: keep inner buttons' text white on tile hover (user requested) */
+.inner-tile:hover .inner-actions a {
+  color: #ffffff !important;
+  /* keep button backgrounds as-is; you can change if you want different contrast */
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+
+.inner-tile h3{
+  color:var(--accent);
+  margin:0;
+  font-size:1.05rem;
+  font-weight:600;
+}
+
+.inner-tile p{ color:var(--muted); margin:0; font-size:0.95rem; }
+
+.inner-actions { margin-top:8px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.inner-actions a{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  box-shadow:0 6px 14px rgba(0,0,0,.35);
+}
+.btn-reg{ background:linear-gradient(90deg,#ff6b3d,#ff3b1f); }
+.btn-slot{ background:linear-gradient(90deg,#007bff,#00a2ff); }
+
+/* remove previous inversion; keep slight shadow change for hovered tile's buttons */
+.inner-tile:hover .inner-actions a.btn-reg,
+.inner-tile:hover .inner-actions a.btn-slot {
+  /* ensure buttons remain visibly clickable on light gradient */
+  color: #ffffff !important;
+  box-shadow: 0 6px 12px rgba(0,0,0,.18);
+}
+
+/* small helper note */
+.small-note { font-size:0.9rem; color:var(--muted); margin-top:6px; text-align:center; }
+
+.map-embed{ width:100%; height:420px; border:0; border-radius:12px; box-shadow:var(--shadow); }
+
+footer{ width: 100%; text-align: center; padding: 16px 0; background: #444444; color: #a9a9a9; font-size: .75rem; border-top: 1px solid #2a2a2a; display:flex; justify-content:center; align-items:center; }
+
+@media(max-width:720px){
+  .inner-tiles{ gap:10px; }
+}
+@media(max-width:520px){
+  #site-title{ font-size:1.9rem; }
+  .slogan{ font-size:0.95rem; }
+  .inner-actions a{ width:100%; text-align:center; }
+  .map-embed{ height:340px; }
+}
