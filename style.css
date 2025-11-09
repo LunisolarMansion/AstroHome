@@ -65,7 +65,7 @@ header img {
 }
 
 #site-title{ font-size:2.75rem; font-weight:600; margin:0 auto 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
-.slogan{ margin:8px auto 20px; font-size:1.05rem; font-style:italic; max-width:90%; text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+.slogan{ margin:8px auto 20px; font-size:1.05rem; font-style:italic; max-width:90%; text-shadow: 0 2px 6px rgba(0,0,0,0.6); text-align: center; /* <<<--- ADDED/CONFIRMED THIS LINE */}
 
 #lang-toggle{
   background: linear-gradient(135deg, #111111, #A8E338);
