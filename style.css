@@ -180,8 +180,16 @@ p{ color:var(--muted); text-align: justify; }
 
 footer{ width: 100%; text-align: center; padding: 16px 0; background: #444444; color: #a9a9a9; font-size: .75rem; border-top: 1px solid #2a2a2a; display:flex; justify-content:center; align-items:center; }
 
-@media(max-width:720px){
+/* @media(max-width:720px){
   .inner-tiles{ gap:10px; }
+} */
+/* MODIFIED SECTION: Font size adjustment for LUNISOLAR MANSION */
+@media(max-width:520px){
+  /* The original CSS already set this, but we ensure it remains compact */
+  #site-title{ font-size:1.9rem; } 
+  .slogan{ font-size:0.95rem; }
+  .inner-actions a{ width:100%; text-align:center; }
+  .map-embed{ height:340px; }
 }
 @media(max-width:520px){
   #site-title{ font-size:1.9rem; }
