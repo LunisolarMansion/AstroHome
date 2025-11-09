@@ -90,6 +90,9 @@ section:hover{ background:var(--card-2); box-shadow:var(--shadow-hover); transfo
 
 h2{ text-align:center; color:var(--accent); font-size:1.4rem; border-bottom:1px solid #2b2b2b; padding-bottom:10px; margin-bottom:14px; font-weight:600; }
 p{ color:var(--muted); text-align: justify; }
+#location-text { 
+  text-align: center; 
+}
 
 /* ENCLOSURE: acts exactly like other section tiles but contains two small inner tiles */
 .enclosure {
