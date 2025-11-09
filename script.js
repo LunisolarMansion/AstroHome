@@ -53,8 +53,8 @@ function updateTexts(){
     document.getElementById('btn-slot').textContent = 'Then, Book Your Visit';
     document.getElementById('registration-note').textContent = 'Your registration number will also be sent to your email.';
     document.getElementById('booking-note').textContent = 'A confirmation of your visit time will also be sent to your email.';
-    document.getElementById('location-heading').textContent = 'Lunisolar Mansion Location';
-    document.getElementById('location-text').textContent = 'Physical location associated with the services offered by Lunisolar Mansion.';
+    document.getElementById('location-heading').textContent = 'Geographical Location';
+    document.getElementById('location-text').textContent = 'Lunisolar Mansion';
     document.getElementById('destiny-text').textContent = 'The purpose of living is to discover the purpose of living. It is destiny which is the master of everything. None can dodge fate! None can hoodwink destiny. None can bribe the God, Goddess, or planets. The native\'s divine plan will go on unchanged. We put on Gem, we pray to God, we receive blessings—all only when the time is ripe.';
   }
 }
