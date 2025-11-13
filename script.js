@@ -27,9 +27,9 @@ function updateTexts(){
     document.getElementById('enclosure-heading').textContent = 'পঞ্জীয়ন আৰু সময় বুকিং';
     document.getElementById('registration-title').textContent = 'প্ৰথমে, পঞ্জীয়ন সম্পূৰ্ণ কৰক';
     document.getElementById('registration-desc').textContent = 'ব্যক্তিগত সেৱাসমূহ লাভ কৰিবলৈ প্ৰথমে পঞ্জীয়ন সম্পূৰ্ণ কৰক।';
-    document.getElementById('btn-register').textContent = 'পঞ্জীয়ন কৰক';
+    document.getElementById('btn-register').textContent = 'পঞ্জীয়ন সম্পূৰ্ণ কৰক';
     document.getElementById('booking-title').textContent = 'তাৰ পাছত, আপোনাৰ ভ্ৰমণৰ সময় সংৰক্ষণ কৰক।';
-    document.getElementById('booking-desc').textContent = 'পঞ্জীয়নৰ পাছত, ভ্ৰমণৰ বাবে এটা সুবিধাজনক সময় সংৰক্ষণ কৰক।';
+    document.getElementById('booking-desc').textContent = 'আপোনাৰ পঞ্জীয়ন নম্বৰ ব্যৱহাৰ কৰি ভ্ৰমণৰ বাবে এটা সুবিধাজনক সময় সংৰক্ষণ কৰক।';
     document.getElementById('btn-slot').textContent = 'ভ্ৰমণৰ সময় সংৰক্ষণ কৰক';
     document.getElementById('registration-note').textContent = "আপোনাৰ পঞ্জীয়ন নম্বৰটো আপোনাৰ ই-মেইললৈও পঠিয়োৱা হ'ব।";
     document.getElementById('booking-note').textContent = "আপোনাৰ ভ্ৰমণ সময়ৰ সংৰক্ষণ নিশ্চিতকৰণটো আপোনাৰ ই-মেইললৈও পঠিয়োৱা হ'ব।";
@@ -45,16 +45,16 @@ function updateTexts(){
     document.getElementById('astrology-heading').textContent = 'Astrology & Life Guidance';
     document.getElementById('astrology-text').textContent = 'At the same time, through personalized horoscope casting and astrological counselling, we reveal your life’s potential, capabilities, and limitations. Astrology points the shortest and safest route to your goals, enabling you to make informed decisions, harness opportunities, and navigate challenges with confidence. Whether it’s marriage, children, education, career, or personal growth, we guide you to align your choices with your divine plan, turning destiny into a path of clarity and empowerment.';
     document.getElementById('enclosure-heading').textContent = 'Registration & Slot Booking';
-    document.getElementById('registration-title').textContent = 'Registration';
-    document.getElementById('registration-desc').textContent = 'Create your account to access personalised services, save appointment history, and receive email confirmations.';
-    document.getElementById('btn-register').textContent = 'First, Complete Registration';
-    document.getElementById('booking-title').textContent = 'Slot Booking';
-    document.getElementById('booking-desc').textContent = 'After registration, reserve a convenient slot for consultation or a site visit. Limited slots — book early to secure your preferred time.';
-    document.getElementById('btn-slot').textContent = 'Then, Book Your Visit';
+    document.getElementById('registration-title').textContent = 'First, complete the registration.';
+    document.getElementById('registration-desc').textContent = 'Complete the registration first to access the personalised services.';
+    document.getElementById('btn-register').textContent = 'Complete Registration';
+    document.getElementById('booking-title').textContent = 'Then, book a visit';
+    document.getElementById('booking-desc').textContent = 'Use your registration number to reserve a convenient time for the visit.';
+    document.getElementById('btn-slot').textContent = 'Book Your Visit';
     document.getElementById('registration-note').textContent = 'Your registration number will also be sent to your email.';
     document.getElementById('booking-note').textContent = 'A confirmation of your visit time will also be sent to your email.';
     document.getElementById('location-heading').textContent = 'Geographical Location';
     document.getElementById('location-text').textContent = 'Lunisolar Mansion';
-    document.getElementById('destiny-text').textContent = 'The purpose of living is to discover the purpose of living. It is destiny which is the master of everything. None can dodge fate! None can hoodwink destiny. None can bribe the God, Goddess, or planets. The native\'s divine plan will go on unchanged. We put on Gem, we pray to God, we receive blessings—all only when the time is ripe.';
+    document.getElementById('destiny-text').textContent = '"The purpose of living is to discover the purpose of living. It is destiny which is the master of everything. None can dodge fate! None can hoodwink destiny. None can bribe the God, Goddess, or planets. The native\'s divine plan will go on unchanged. We put on Gem, we pray to God, we receive blessings—all only when the time is ripe."';
   }
 }
