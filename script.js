@@ -45,10 +45,10 @@ function updateTexts(){
     document.getElementById('astrology-heading').textContent = 'Astrology & Life Guidance';
     document.getElementById('astrology-text').textContent = 'At the same time, through personalized horoscope casting and astrological counselling, we reveal your life’s potential, capabilities, and limitations. Astrology points the shortest and safest route to your goals, enabling you to make informed decisions, harness opportunities, and navigate challenges with confidence. Whether it’s marriage, children, education, career, or personal growth, we guide you to align your choices with your divine plan, turning destiny into a path of clarity and empowerment.';
     document.getElementById('enclosure-heading').textContent = 'Registration & Slot Booking';
-    document.getElementById('registration-title').textContent = 'First, complete the registration.';
+
     document.getElementById('registration-desc').textContent = 'Complete the registration first to access the personalised services.';
     document.getElementById('btn-register').textContent = 'Complete Registration';
-    document.getElementById('booking-title').textContent = 'Then, book a visit';
+
     document.getElementById('booking-desc').textContent = 'Use your registration number to reserve a convenient time for the visit.';
     document.getElementById('btn-slot').textContent = 'Book Your Visit';
     document.getElementById('registration-note').textContent = 'Your registration number will also be sent to your email.';
