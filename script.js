@@ -33,7 +33,7 @@ function updateTexts(){
     document.getElementById('btn-slot').textContent = 'ভ্ৰমণৰ সময় সংৰক্ষণ কৰক';
     document.getElementById('registration-note').textContent = "আপোনাৰ পঞ্জীয়ন নম্বৰটো আপোনাৰ ই-মেইললৈও পঠিয়োৱা হ'ব।";
     document.getElementById('booking-note').textContent = "আপোনাৰ ভ্ৰমণ সময়ৰ সংৰক্ষণ নিশ্চিতকৰণটো আপোনাৰ ই-মেইললৈও পঠিয়োৱা হ'ব।";
-    document.getElementById('location-heading').textContent = 'ভৌগোলিক অৱস্থিতি';
+    document.getElementById('location-heading').textContent = 'অৱস্থিতি';
     document.getElementById('location-text').textContent = 'লুনিচ’লাৰ মেনছন';
     document.getElementById('destiny-text').textContent = '"জীৱনৰ উদ্দেশ্য হৈছে জীয়াই থকাৰ উদ্দেশ্য আৱিষ্কাৰ কৰা। নিয়তিয়েই সকলোৰে অধিপতি। কোনেও ভাগ্যক এৰাই চলিব নোৱাৰে! কোনেও নিয়তিক ফাকি দিব নোৱাৰে। কোনেও ঈশ্বৰ, দেৱী বা গ্ৰহসমূহক ভেঁটি দিব নোৱাৰে। ব্যক্তিৰ দৈৱিক পৰিকল্পনা অপৰিৱৰ্তিতভাৱে চলি থাকিব। আমি ৰত্ন ধাৰাণ কৰোঁ, ঈশ্বৰক প্ৰাৰ্থনা কৰোঁ, আশীৰ্বাদ লাভ কৰোঁ— এই সকলোবোৰ কেৱল সময় উপযুক্ত হ’লেহে।"';
   } else {
@@ -53,7 +53,7 @@ function updateTexts(){
     document.getElementById('btn-slot').textContent = 'Book Your Visit';
     document.getElementById('registration-note').textContent = 'Your registration number will also be sent to your email.';
     document.getElementById('booking-note').textContent = 'A confirmation of your visit time will also be sent to your email.';
-    document.getElementById('location-heading').textContent = 'Geographical Location';
+    document.getElementById('location-heading').textContent = 'Location';
     document.getElementById('location-text').textContent = 'Lunisolar Mansion';
     document.getElementById('destiny-text').textContent = '"The purpose of living is to discover the purpose of living. It is destiny which is the master of everything. None can dodge fate! None can hoodwink destiny. None can bribe the God, Goddess, or planets. The native\'s divine plan will go on unchanged. We put on Gem, we pray to God, we receive blessings—all only when the time is ripe."';
   }
